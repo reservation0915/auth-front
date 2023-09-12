@@ -9,10 +9,10 @@ import HOME from "../components/Home";
 const CustomRouter = ()=>{
     const myRoutes = [
         {
-        path:"/login", component:<Login/>
-    },{
-        path:"/register", component:<Signup />
-    },{
+            path:"/login", component:<Login/>
+        },{
+            path:"/register", component:<Signup />
+        },{
         path:"/my/register", component:<MySignup/>
     },{
             path:"/auth", component:<Auth/>

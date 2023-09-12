@@ -3,16 +3,8 @@ import {useLocation, useNavigate, useParams} from "react-router";
 
 const MySignup = ()=>{
     const location = useLocation()
-    console.log(location)
-    const roles = [
-        'YJ',
-        'KS',
-        'JS',
-        'JK',
-        'KH',
-        'JH',
-        'TEST'
-    ]
+
+
     const [user,setUser] = useState({
         email:"", username:"", role:"",age:0
     })

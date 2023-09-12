@@ -31,11 +31,9 @@ const Signup = ()=>{
                 },
                 body: JSON.stringify(user)
             })
-            .then(res=>
-                res.json()
-            )
-            .then(body=>
-                nav(`/login`)
+            .then(res=> {
+                    if (res.status === 200) nav(`/login`)
+                }
             )
             .catch(e=>
                 console.log(e)
